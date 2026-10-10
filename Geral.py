@@ -6,11 +6,11 @@ st.set_page_config(layout='wide', page_icon="💬")
 
 # --- Funções auxiliares ---
 def carregar_mensagens():
-    with open('mensagens.json', 'r', encoding='utf-8') as f:
+    with open('Mensagens.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def salvar_mensagens(mensagens):
-    with open('mensagens.json', 'w', encoding='utf-8') as f:
+    with open('Mensagens.json', 'w', encoding='utf-8') as f:
         json.dump(mensagens, f, indent=4, ensure_ascii=False)
 
 # --- Sidebar ---
